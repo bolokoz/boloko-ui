@@ -11,7 +11,7 @@ export default defineContentConfig({
       source: {
         repository: 'https://github.com/bolokoz/yurio',
         include: 'content/**/*.md',
-        exclude: ['README.md']
+        exclude: ['README.md', '/templates/**']
       }
       // Define custom schema for docs collection
       // schema: z.object({

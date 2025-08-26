@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { seo } = useAppConfig()
 
-// const { data: demonav } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'))
+const { data: docsnavigation } = await useAsyncData('docsnavigation', () => queryCollectionNavigation('docs'))
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('obsidian'))
 const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSections('docs'), {
   server: false
@@ -25,6 +25,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
+provide('docsnavigation', docsnavigation)
 provide('navigation', navigation)
 </script>
 

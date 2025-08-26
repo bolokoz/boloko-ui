@@ -8,9 +8,9 @@ definePageMeta({
 
 const route = useRoute()
 const { toc } = useAppConfig()
-const navigation = inject<Ref<ContentNavigationItem[]>>('docsnavigation')
+const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
-const { data: page } = await useAsyncData(route.path, () => queryCollection('docs').path(route.path).first())
+const { data: page } = await useAsyncData(route.path, () => queryCollection('obsidian').path(route.path).first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }

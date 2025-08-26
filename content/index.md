@@ -9,43 +9,24 @@ seo:
 ---
 orientation: horizontal
 ---
-  :::prose-pre
+  ::card-group
+  :::card
   ---
-  code: npx nuxi init -t github:nuxt-ui-pro/docs
-  filename: Terminal
+  icon: i-simple-icons-nuxtdotjs
+  target: _blank
+  title: Nuxt
+  to: https://nuxt.com
   ---
-  ```bash
-  npx nuxi init -t github:nuxt-ui-pro/docs
-  ```
+  The Nuxt website
   :::
+  ::
 
 #title
-Build your docs with Nuxt UI Pro
+Boloko web
 
 #description
 Nuxt UI Pro is a collection of premium components built on top of Nuxt UI to create beautiful & responsive applications in minutes.
 
-#links
-  :::u-button
-  ---
-  size: xl
-  to: /getting-started
-  trailing-icon: i-lucide-arrow-right
-  ---
-  Get started
-  :::
-
-  :::u-button
-  ---
-  color: neutral
-  icon: i-simple-icons-github
-  size: xl
-  target: _blank
-  to: https://github.com/nuxt-ui-pro/docs
-  variant: subtle
-  ---
-  Use this template
-  :::
 ::
 
 ::u-page-section
@@ -70,7 +51,7 @@ All-in-one documentation template
   ---
   icon: i-simple-icons-nuxt
   target: _blank
-  to: https://nuxt.com
+  to: /popo
   ---
   #title
   Nuxt 3
