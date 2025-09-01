@@ -1,7 +1,7 @@
 export default defineAppConfig({
   ui: {
     colors: {
-      primary: 'green',
+      primary: 'oklch(37.9% 0.146 265.522)',
       neutral: 'slate'
     },
     footer: {
@@ -15,7 +15,7 @@ export default defineAppConfig({
     siteName: 'Boloko'
   },
   header: {
-    title: '',
+    title: 'bolokovisk',
     to: '/',
     logo: {
       alt: '',
@@ -26,7 +26,7 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt-ui-pro/docs',
+      'to': 'https://github.com/bolokoz/blognuxtui',
       'target': '_blank',
       'aria-label': 'GitHub'
     }]
@@ -34,27 +34,29 @@ export default defineAppConfig({
   footer: {
     credits: `Copyright © ${new Date().getFullYear()}`,
     colorMode: false,
-    links: [{
-      'icon': 'i-simple-icons-nuxtdotjs',
-      'to': 'https://nuxt.com',
-      'target': '_blank',
-      'aria-label': 'Nuxt Website'
-    }, {
-      'icon': 'i-simple-icons-discord',
-      'to': 'https://discord.com/invite/ps2h6QT',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on Discord'
-    }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://x.com/nuxt_js',
-      'target': '_blank',
-      'aria-label': 'Nuxt on X'
-    }, {
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
-      'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
-    }]
+    links: [
+    //   {
+    //   'icon': 'i-simple-icons-nuxtdotjs',
+    //   'to': 'https://nuxt.com',
+    //   'target': '_blank',
+    //   'aria-label': 'Nuxt Website'
+    // }, {
+    //   'icon': 'i-simple-icons-discord',
+    //   'to': 'https://discord.com/invite/ps2h6QT',
+    //   'target': '_blank',
+    //   'aria-label': 'Nuxt UI on Discord'
+    // }, {
+    //   'icon': 'i-simple-icons-x',
+    //   'to': 'https://x.com/nuxt_js',
+    //   'target': '_blank',
+    //   'aria-label': 'Nuxt on X'
+    // },
+      {
+        'icon': 'i-simple-icons-github',
+        'to': 'https://github.com/bolokoz/',
+        'target': '_blank',
+        'aria-label': 'Boloko on GitHub'
+      }]
   },
   toc: {
     title: 'Table of Contents',

@@ -19,6 +19,14 @@ orientation: horizontal
   ---
   The Nuxt website
   :::
+  :::card
+  ---
+  icon: i-simple-icons-nuxtdotjs
+  title: Inspira UI
+  to: /inspira
+  ---
+  The Nuxt website
+  :::
   ::
 
 #title

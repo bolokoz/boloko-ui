@@ -1,9 +1,9 @@
 <template>
-  <div :class="['relative overflow-hidden h-full w-full', props.containerClass]">
-    <canvas
-      ref="canvasRef"
-      :class="['absolute inset-0 h-full w-full block', props.class]"
-    />
+  <div class="relative w-full h-full">
+    <canvas ref="canvasRef" class="absolute inset-0 w-full h-full"></canvas>
+    <div class="absolute inset-0 flex items-start justify-start pointer-events-none z-10">
+      <slot />
+    </div>
   </div>
 </template>
 
